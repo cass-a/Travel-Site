@@ -1,0 +1,115 @@
+@use "../scss/partials/variables" as *;
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  align-items: baseline;
+  background-color: $Primarybg-color;
+  margin-top: 0;
+
+  &__pagetitle {
+    font-size: $wordmarkFont;
+    color: $PrimaryFont-color;
+    font-weight: 900;
+    font-weight: bold;
+    margin-left: 7.25rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    list-style-type: none;
+    overflow: hidden;
+    position: relative;
+    right: 3.125rem;
+  }
+}
+
+.main-nav__list a {
+  color: $FontColor;
+  font-size: 1rem;
+  list-style-type: none;
+  margin: 1rem;
+  text-decoration: none;
+  padding-bottom: 0.4rem;
+}
+
+.main-nav__list {
+  & a:hover {
+    border-bottom: $PrimaryGeneral-color solid 4px;
+  }
+
+  & a.active {
+    border-bottom: $PrimaryGeneral-color solid 4px;
+  }
+}
+
+footer {
+  height: 20rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: $mainbg-color;
+  text-align: left;
+  justify-content: space-evenly;
+}
+
+.footer__subtitle {
+  text-align: left;
+  align-items: baseline;
+  color: $PrimaryFont-color;
+  font-size: $wordmarkFont;
+  font-weight: bold;
+  padding-top: 3.1rem;
+  padding-bottom: 1.25rem;
+}
+
+.footer__hours {
+  position: relative;
+  right: 12.5rem;
+}
+
+.social__image {
+  margin: 0.938rem;
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+.email__days {
+  color: $PrimaryGeneral-color;
+  text-align: left;
+  font-size: 0.7rem;
+}
+
+.further__info {
+  color: $PrimaryFont-color;
+  font-weight: 500;
+}
+
+.opening__time {
+  position: relative;
+  left: 12.5rem;
+  bottom: 4rem;
+}
+
+.closing__sunday {
+  position: relative;
+  left: 25rem;
+  bottom: 8rem;
+}

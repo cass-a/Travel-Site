@@ -1,0 +1,103 @@
+@use "../scss/partials/variables" as *;
+
+.travel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $mainbg-color;
+  overflow: auto;
+  padding: 4rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 3.1rem;
+  }
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 3.3rem;
+  }
+  &__reason {
+    color: $PrimaryFont-color;
+    font-size: $TravelReasonFont;
+  }
+
+  &__slogan {
+    color: $PrimaryFont-color;
+    margin-left: -12.5rem;
+  }
+
+  &__image-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    object-fit: contain;
+  }
+
+  &__btn {
+    background-color: $PrimaryGeneral-color;
+    color: $Primarybg-color;
+    border: none;
+    border-radius: 1.25rem;
+    width: 12.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: $btnFontSize;
+    margin-left: -36.5rem;
+
+    &:hover {
+      background-color: $PrimaryFont-color;
+      color: orange;
+    }
+  }
+}
+
+#hero {
+  width: 31.2rem;
+  height: 25rem;
+  margin-inline: 6.25rem;
+  margin-top: 5rem;
+}
+
+h2 {
+  font-size: $wordmarkFont;
+  color: $PrimaryFont-color;
+  font-weight: bold;
+  margin-left: 6.7rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.holiday__cards {
+  width: 20rem;
+  height: 28rem;
+  margin: 1.5rem;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid rgba (0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.destination__image {
+  border-radius: 5px 5px 5px 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.country {
+  font-size: $wordmarkFont;
+  color: $Primarybg-color;
+  position: relative;
+  left: 13.75rem;
+  bottom: 4.6rem;
+}
